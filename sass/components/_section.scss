@@ -1,0 +1,12 @@
+.section {
+  max-width: 1200px;
+  height: 720px;
+  // padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    // padding: 94px 0;
+  }
+
+  &.hero {
+    padding: 0;
+  }
+}
