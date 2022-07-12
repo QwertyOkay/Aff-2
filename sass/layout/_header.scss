@@ -2,7 +2,8 @@
   // max-width: 1920px;
   background-image: url(../images/Desktop.png);
     // background-size: cover;
-    height: 720px;
+    // height: 720px;
+    height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -17,8 +18,8 @@
     }
 
     @media screen and (min-width: 768px) {
-    width: 1750px;
-    max-width: 1750px;
+    // width: 1750px;
+    // max-width: 1750px;
     // height: 1024px;
     background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -48,9 +49,13 @@
   .header__container {
     // width: 100%;
     // max-width: 1200px;
+    display: block;
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
+    }
     // background-size: contain;
     // background-size: cover;
    
@@ -60,35 +65,81 @@
       font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 100px;
-        line-height: 122px;
+        font-size: 50px;
+        line-height: 61px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+        margin: 70px 50px 40px 50px;
+
+        @media screen and (min-width: 1200px) {
+          font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 100px;
+            line-height: 122px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+        }
   }
 
   .header__text {
     font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
-      font-size: 40px;
-      line-height: 49px;
+      font-size: 22px;
+      line-height: 27px;
       text-align: center;
       color: #FFFFFF;
-      margin-top: 20px;
+      margin: 0px 20px 0px 20px;
+      
+      @media screen and (min-width: 1200px) {
+        font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 49px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 20px;
+      }
   }
 
   .header__form-mail {
+    display: flex;
+      width: 220px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      border: none;
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     width: 400px;
     height: 72px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     border: none;
+    }
   }
 
   input::placeholder {
+    width: 49px;
+      height: 18px;
+    padding: 17px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+    
+      color: rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1200px) {
     padding: 30px;
     width: 82.23px;
       height: 30px;
@@ -99,15 +150,35 @@
         line-height: 30px;
         text-align: center;
         color: rgba(0, 0, 0, 0.25);
+    }
   }
 
   .header__button {
+    width: 140px;
+      height: 40px;
+      border: none;
+        background: #DD5B83;
+        border-radius: 8px;
+          left: 158px;
+          top: 317px;
+        
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+        
+          color: #FFFFFF;
+        margin-top: 15px;
+        margin-left: 48px;
+        
+    @media screen and (min-width: 1200px) {
     width: 320px;
       height: 72px;
       border: none;
       background: #DD5B83;
       border-radius: 8px;
-
       font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -117,6 +188,7 @@
         color: #FFFFFF;
         margin-top: 20px;
         margin-left: 48px;
+    }
   }
 
   .header__content {
@@ -128,5 +200,27 @@
 
   .header__form {
     display: block;
-    margin-top: 80px;
+    margin-top: 30px;
   }
+
+  .header__man {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+  }
+}
+
+.games {
+  display: block;
+  height: 57vh;
+  @media screen and (min-width: 1200px) {
+    display: none;
+}
+}
+
+.header__games {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 28px;
+}
